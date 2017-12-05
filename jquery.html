@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script lang="javascript">
+		$().ready(
+			function() {
+				console.log("Message:", "The document is loaded");
+				
+				var isPrimary = true;
+				if(isPrimary) {
+					$("button").addClass("btn btn-primary");
+					$("#thebutton").removeClass("btn-primary").addClass("btn-warning");
+
+				} else {
+					$("button").addClass("btn btn-danger");
+				}
+			}
+		);
+	</script>
+</head>
+<body>
+	<button>Click me!</button>
+	<button>Click me!</button>
+	<button>Click me!</button>
+	<button id="thebutton">Click the button!</button>
+	<button>Click me!</button>
+	<button>Click me!</button>
+	<button>Click me!</button>
+	<button>Click me!</button>
+</body>
+</html>
